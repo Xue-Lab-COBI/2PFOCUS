@@ -1,17 +1,17 @@
-# Fluorescence Diffraction Tomography using Explicit Neural Fields
+# Scattering Correction through Fourier-Domain Open-Channel Coupling in Two-Photon Microscopy (2P-FOCUS)
 
-This is the repository that contains source code for the [FDT website](https://cubhe.github.io/fdt/).
+This is the repository that contains source code for the [2PFOCUS website](https://.github.io//).
 
-If you find Nerfies useful for your work please cite:
+If you find 2P-FOCUS useful for your work please cite:
 ```
 @misc{he2024fluorescencediffractiontomographyusing,
-      title={Fluorescence Diffraction Tomography using Explicit Neural Fields}, 
-      author={Renzhi He and Yucheng Li and Junjie Chen and Yi Xue},
+      title={Scattering compensation through Fourier-domain open-channel coupling in two-photon microscopy}, 
+      author={Daniel Zepeda and Yucheng Li and Yi Xue},
       year={2024},
-      eprint={2407.16657},
+      eprint={2401.15192},
       archivePrefix={arXiv},
       primaryClass={physics.optics},
-      url={https://arxiv.org/abs/2407.16657}, 
+      url={https://arxiv.org/abs/2401.15192}, 
 }
 ```
 
