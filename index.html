@@ -179,62 +179,6 @@
 </section> -->
 
 
-<!-- <section class="hero is-light is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-steve">
-          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/steve.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-chair-tp">
-          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/chair-tp.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-shiba">
-          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/shiba.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-fullbody">
-          <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/fullbody.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-blueshirt">
-          <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/blueshirt.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-mask">
-          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/mask.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-coffee">
-          <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/coffee.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-toby">
-          <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/toby2.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
 
 
 <section class="section">
@@ -292,7 +236,7 @@
             <p>
               <span class="caption">a</span>, Without correction, all pixels of the digital micromirror device (DMD) are turned on, allowing all incident light to pass through to the scattering sample. The incident light is scattered and cannot form a tight focus. 
               <span class="caption">b</span>, The process of generating a correction mask involves three steps. The first step is to project random intensity patterns, which are orthogonal to each other, onto the DMD and record the corresponding fluorescence intensity using a photomultiplier tube (PMT). The second step is selecting the random masks that correspond to high fluorescence intensity and summing these masks to create a grayscale correction mask. The third step is to binarize the grayscale correction mask for display on the DMD. 
-              <span class="caption">c</span>,  With correction, the binary correction mask is projected on the DMD, allowing only the beams that interfere constructively pass through. The illumination power on the sample is maintained at the same level before and after correction by increasing the input power to the DMD to compensate for the power loss due to turning off some pixels. The correction results in a brighter focus compared to the case before correction. 
+              <span class="caption">c</span>, With correction, the binary correction mask is projected on the DMD, allowing only the beams that interfere constructively pass through. The illumination power on the sample is maintained at the same level before and after correction by increasing the input power to the DMD to compensate for the power loss due to turning off some pixels. The correction results in a brighter focus compared to the case before correction. 
               <span class="caption">d</span>, Optical schematic diagram of 2P-FOCUS. A femtosecond laser at 1035 nm is used as the light source. A half-wave plate (HWP) and a polarized beam splitter (PBS) are used to control the laser power. A pair of scanning mirrors (SM) is used to scan the focus across the field-of-view. A grating is used to compensate for the spatial dispersion caused by the DMD. Three 4-<i>f</i> systems are implemented with pairs of relay lenses (L1 and L2, L3 and L4, L5 and the tube lens). DMD is located on the conjugate plane of the objective lens's (OL) back aperture. The objective lens focuses the beams on the sample and collects emitted fluorescence. Fluorescence is detected by a PMT after passing through a dichroic mirror (DM), a collection lens, and a color filter. Sample is mounted on a linear translation stage for collecting z-stack images
             </p>
 
@@ -318,10 +262,10 @@
 
     <div class="content has-text-justified">
       <p>
-        We verify the validation of our model as well as each component in the
-        model under the simulation 'ucdavis' data. Then, we applied the FDT to experimental
-        data of thin (MDCK) and thick (3D muscle tube) sample to show the effectiveness of our model for variety of
-        structure and z-section ability. 
+        We demonstrate the performance of 2P-FOCUS with proof-of-principle experiments, including focusing and imaging through approximately 200 μm-thick bone,
+        and imaging fluorescence-labeled neurons and blood vessels up to 500 μm deep in the mouse brain ex vivo. 2P-FOCUS achieves a 3-60 fold enhancement in fluorescence intensity
+        compared to standard two-photon microscopy. 2P-FOCUS can also correct scattering beyond the memory effect range by projecting different correction masks onto corresponding subregions, achieving a 230 × 230 μm<sup>2</sup> field-of-view in all the experiments. 
+        2P-FOCUS completes the entire correction process in a few seconds, including taking measurements, calculating correction masks, and projecting correction masks. 2P-FOCUS is an active scattering correction tool for focusing and imaging through highly scattering tissues.
       </p>
       <div class="related-work">
         <h3 class="title is-4">UCDavis</h3>
