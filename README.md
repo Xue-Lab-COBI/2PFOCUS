@@ -4,7 +4,7 @@ This is the repository that contains source code for the [2PFOCUS website](https
 
 If you find 2P-FOCUS useful for your work please cite:
 ```
-@misc{he2024fluorescencediffractiontomographyusing,
+@misc{zepeda2024scatteringcompensationfourierdomainopenchannel,
       title={Scattering compensation through Fourier-domain open-channel coupling in two-photon microscopy}, 
       author={Daniel Zepeda and Yucheng Li and Yi Xue},
       year={2024},
