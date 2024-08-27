@@ -268,23 +268,24 @@
         2P-FOCUS completes the entire correction process in a few seconds, including taking measurements, calculating correction masks, and projecting correction masks. 2P-FOCUS is an active scattering correction tool for focusing and imaging through highly scattering tissues.
       </p>
       <div class="related-work">
-        <h3 class="title is-4">Imaging fluorescence beads through a 200 μm-thick bone beyond the memory effect range.</h3>
+        <h3 class="title is-4">Subregion correction for imaging beyond the memory effect range</h3>
         <div class="work-item">
           <a href="">
-            <img src="./static/images/fig_ucd3.jpg">
+            <img src="./static/images/Fig3.jpg">
           </a>
           <p class="caption">
-            <strong>Reconstruction of the 3D RI of a simulated "UCDavis" pattern.</strong>
+            <strong>Imaging fluorescence beads through a 200 μm-thick bone beyond the memory effect range</strong>
           </p>
           <p>
-            <span class="caption">a</span>, Reconstructed 3D RI distribution of the "UCDavis" pattern in 3D from 400 fluorescence images. 
-            <span class="caption">b</span>, A representative ground-truth (GT) image, generated using the multi-slice model with the ground-truth 3D RI, where the RI of the letters is 1.38 and the background is 1.33. 
-            <span class="caption">c</span>, The predicted fluorescence image under the same illumination as <span class="caption">b</span> with the reconstructed 3D RI. 
-            <span class="caption">d</span>, Zoomed-in views of the regions within the orange and green boxes in <span class="caption">b</span> and <span class="caption">c</span>, respectively. The SSIM and PSNR between the ground-truth and predicted images are 0.9994 and 56.9062, respectively. 
-            <span class="caption">e</span>, Results of self-calibration of the positions of fluorescent sources at 50, 100, and 150 iterations. The blue circle indicates the irradiated region from the ground-truth position of the excited fluorophore, and the white dashed line indicates the irradiated region from the predicted position of the fluorophore. 
-            <span class="caption">f</span>, The plot on the right shows the MSE loss between the self-calibrated and ground-truth fluorophore positions, converging to 0.001 within 500 iterations, indicating successful self-calibration of the positions of fluorescent sources. 
-            <span class="caption">g</span>, Comparison of the ground-truth RI (top row) and the predicted RI (bottom row) on each <i>z</i>-plane, as indicated by the axis below. 
-            <span class="caption">h</span>, Effect of the coarse-to-fine structure on reconstruction results on two different <i>z</i>-planes (top row, <i>z</i> = 65 μm; bottom row, <i>z</i> = 53 μm). The first three columns show results of the coarse-to-fine structure at different iterations (100, 200, and 300) with progressively increasing sampling grid at 128 × 128, 256 × 256, and 512 × 512 pixels. The last column shows the results after 300 iterations without the coarse-to-fine structure at a sampling grid of 512 × 512 pixels. Comparing the third column and the fourth column, the coarse-to-fine structure mitigates crosstalk between <i>z</i>-planes and reconstructs the missing low-frequency signals.
+            <span class="caption">a</span>, Schematic diagram of global correction. Global correction applies the same correction mask to all scanning locations during the imaging process.
+            <span class="caption">b</span>, Schematic diagram of subregion correction. Subregion correction applies a different correction mask for each subregion. The scanning mirror and the DMD are synchronized to project the corresponding mask at each scanning location. 
+            <span class="caption">c</span>, Schematic diagram of the sample used in this experiment. A piece of chicken bone was adhered on top of red fluorescent beads in PDMS
+            <span class="caption">d-f</span>, <span class="caption">d-f</span> Imaging fluorescent beads through highly scattering bone across a 230 × 230 μm<sup>2</sup> field-of-view. The laser power on the sample is 25 mW for all three cases.
+            <span class="caption">d</span>, The image taken without scattering correction.
+            <span class="caption">e</span>, The image taken under global correction. The reference object is indicated by the yellow arrow. The object outside the memory effect range is invisible (indicated by the red arrow). The peak intensity improved from 9 to 26 after global correction.
+            <span class="caption">f</span>, The image taken under subregion correction. With subregion correction, the previously invisible object in <span class="caption">e</span> becomes visible. The peak fluorescence intensity improved from 9 to 43 after subregion correction.
+            <span class="caption">g</span>, The intensity profile of the two clusters of beads indicated by arrows in <span class="caption">d-f</span>. The distance between these two objects is 96 μm. The correction mask for imaging the left object cannot effectively correct scattering for imaging the right object, indicating the memory effect range of this region is smaller than 96 μm.
+            
           </p>
         </div>
         
