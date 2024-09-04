@@ -1,4 +1,4 @@
-# Scattering Correction through Fourier-Domain Open-Channel Coupling in Two-Photon Microscopy (2P-FOCUS)
+# Scattering Correction through Fourier-Domain Intensity Coupling in Two-Photon Microscopy (2P-FOCUS)
 
 This is the repository that contains source code for the [2PFOCUS website](https://YuchengLi-steven.github.io/2PFOCUS/).
 
